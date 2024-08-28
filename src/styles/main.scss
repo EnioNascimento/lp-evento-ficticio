@@ -1,0 +1,56 @@
+@use 'hero';
+@use 'event';
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    color: #fff;
+}
+
+body{
+    background-color: #000;
+}
+
+hr{
+    border: 1px solid rgba(silver,0.1);
+    height: 3px;
+    margin: 25px 0;
+}
+
+
+.button-footer{
+    background-color: #fff;
+    color: #000;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5.6vw;
+}
+
+footer{
+    text-align: center;
+    margin: 35px auto;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media(max-width: 640px){
+        max-width: 80%;
+    }
+
+    @media(max-width: 1024px){
+        max-width: 90%;
+    }
+}
